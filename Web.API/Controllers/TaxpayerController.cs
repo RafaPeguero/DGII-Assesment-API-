@@ -13,7 +13,7 @@ public class TaxpayerController: ControllerBase
         _taxpayerService = taxpayerService;
     }
     
-    [HttpGet("")]
+    [HttpGet]
     public async Task<ActionResult> GetAllTaxpayers()
     {
         try
@@ -23,7 +23,7 @@ public class TaxpayerController: ControllerBase
         }
         catch (Exception exception)
         {
-            return BadRequest(exception);
+            return BadRequest(exception.Message);
         }
     }
 }

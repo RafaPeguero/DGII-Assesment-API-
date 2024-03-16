@@ -1,6 +1,6 @@
 using System.Data;
 using Infrastructure.interfaces.Factories;
-using Microsoft.Data.SqlClient;
+using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.Configuration;
 
 namespace Infrastructure.Factories;
@@ -16,6 +16,6 @@ public class ConnectionFactory : IConnectionFactory
 
     public IDbConnection CreateConnection(string connectionStringName)
     {
-        return new SqlConnection(_configuration[connectionStringName]);
+        return new SqliteConnection(_configuration[connectionStringName]);
     }
 }

@@ -1,5 +1,4 @@
 using Infrastructure.interfaces.Services;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Web.API.Controllers;
@@ -15,7 +14,7 @@ public class TaxReceiptController: ControllerBase
         _taxReceiptService = taxReceiptService;
     }
     
-    [HttpGet("")]
+    [HttpGet]
     public async Task<ActionResult> GetAllTaxReceipts()
     {
         try
@@ -25,7 +24,7 @@ public class TaxReceiptController: ControllerBase
         }
         catch (Exception exception)
         {
-            return BadRequest(exception);
+            return BadRequest(exception.Message);
         }
     }
     
@@ -39,7 +38,7 @@ public class TaxReceiptController: ControllerBase
         }
         catch (Exception exception)
         {
-            return BadRequest(exception);
+            return BadRequest(exception.Message);
         }
     }
 }
