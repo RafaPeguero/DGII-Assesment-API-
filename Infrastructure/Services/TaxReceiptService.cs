@@ -18,7 +18,7 @@ public class TaxReceiptService: ITaxReceiptService
         return await _receiptRepository.GetAll() ?? throw new InvalidOperationException();
     }
 
-    public async Task<IEnumerable<TaxReceipt>> GetAllTaxReceiptsByTaxpayerId(int taxpayerId)
+    public async Task<IEnumerable<TaxReceipt>> GetAllTaxReceiptsByTaxpayerId(long taxpayerId)
     {
         return await _receiptRepository.GetTaxReceiptsByTaxPayerId(taxpayerId);
     }

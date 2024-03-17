@@ -29,7 +29,7 @@ public class TaxReceiptController: ControllerBase
     }
     
     [HttpGet("{taxpayerId}")]
-    public async Task<ActionResult> GetAllTaxReceiptsByTaxpayer( int taxpayerId)
+    public async Task<ActionResult> GetAllTaxReceiptsByTaxpayer( long taxpayerId)
     {
         try
         {

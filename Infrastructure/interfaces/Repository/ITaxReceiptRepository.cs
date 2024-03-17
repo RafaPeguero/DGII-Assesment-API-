@@ -4,5 +4,5 @@ namespace Infrastructure.interfaces.repository;
 
 public interface ITaxReceiptRepository: IBaseRepository<TaxReceipt, int>
 {
-    Task<IEnumerable<TaxReceipt>> GetTaxReceiptsByTaxPayerId(int taxPayerId);
+    Task<IEnumerable<TaxReceipt>> GetTaxReceiptsByTaxPayerId(long taxPayerId);
 }

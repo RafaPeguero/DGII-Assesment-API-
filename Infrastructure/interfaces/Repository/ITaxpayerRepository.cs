@@ -3,7 +3,7 @@ using Domain.Models;
 
 namespace Infrastructure.interfaces.repository;
 
-public interface ITaxpayerRepository: IBaseRepository<Taxpayer, int>
+public interface ITaxpayerRepository: IBaseRepository<Taxpayer, long>
 {
     
 }

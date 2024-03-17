@@ -15,7 +15,7 @@ public class TaxReceiptRepository: ITaxReceiptRepository
     }
 
 
-    public async Task<IEnumerable<TaxReceipt>> GetTaxReceiptsByTaxPayerId(int taxPayerId)
+    public async Task<IEnumerable<TaxReceipt>> GetTaxReceiptsByTaxPayerId(long taxPayerId)
     {
         return await Connection.QueryAsync<TaxReceipt>(t => t.TaxPayerId == taxPayerId);
     }
