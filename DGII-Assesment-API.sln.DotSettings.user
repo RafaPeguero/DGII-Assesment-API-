@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/rafaelpeguero/Library/Caches/JetBrains/Rider2023.3/resharper-host/temp/Rider/vAny/CoverageData/_DGII-Assesment-API.-1223690591/Snapshot/snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4364fa1f_002Ddd20_002D40b6_002D9105_002Db64d219ac320/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ConnectionFactoryTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;MSTest::0B39836C-9F47-47EA-B74F-FC45FF7455AF::net8.0::DGII_Assesment_API_Test.Factories.ConnectionFactoryTest&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::0B39836C-9F47-47EA-B74F-FC45FF7455AF::net8.0::DGII_Assesment_API_Test.Repositories.TaxReceiptRepositoryTest&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::0B39836C-9F47-47EA-B74F-FC45FF7455AF::net8.0::DGII_Assesment_API_Test.Repositories.TaxpayerRepositoryTest&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::0B39836C-9F47-47EA-B74F-FC45FF7455AF::net8.0::DGII_Assesment_API_Test.Services.TaxpayerServiceTest.Should_Get_All_Taxpayers&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::0B39836C-9F47-47EA-B74F-FC45FF7455AF::net8.0::DGII_Assesment_API_Test.Services.TaxReceiptServiceTest&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::0B39836C-9F47-47EA-B74F-FC45FF7455AF::net8.0::DGII_Assesment_API_Test.Controllers.TaxpayerControllerTest.GetAllTaxpayers_ReturnsOkResultWithTaxpayers_WhenServiceReturnsData&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::0B39836C-9F47-47EA-B74F-FC45FF7455AF::net8.0::DGII_Assesment_API_Test.Controllers.TaxpayerControllerTest&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::0B39836C-9F47-47EA-B74F-FC45FF7455AF::net8.0::DGII_Assesment_API_Test.Controllers.TaxReceiptControllerTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
