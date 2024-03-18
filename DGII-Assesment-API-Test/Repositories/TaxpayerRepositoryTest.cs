@@ -24,6 +24,7 @@ public class TaxpayerRepositoryTest
     [TestMethod]
     public async Task ShouldGet()
     {
+        //Arrange
         var taxpayers = new List<Taxpayer>()
         {
             new ()
@@ -41,11 +42,11 @@ public class TaxpayerRepositoryTest
                 Type = "Persona Fisica",
             }
         };
-    
+        //Act
         await _connection.InsertAllAsync(taxpayers);
-    
         var result =  await _repository.GetAll();
-    
+        
+        //Assert
         result.Should().BeEquivalentTo(taxpayers);
     }
 }

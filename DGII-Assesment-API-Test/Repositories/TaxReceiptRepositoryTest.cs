@@ -23,6 +23,7 @@ public class TaxReceiptRepositoryTest
     [TestMethod]
     public async Task ShouldGetAll()
     {
+        //Arrange
         var taxReceipts = new List<TaxReceipt>()
         {
             new ()
@@ -42,11 +43,11 @@ public class TaxReceiptRepositoryTest
                 Itbis18 = 25.00
             },
         };
-
+        //Act
         await _connection.InsertAllAsync(taxReceipts);
-
         var result =  await _repository.GetAll();
-
+            
+        //Assert
         result.Should().BeEquivalentTo(taxReceipts);
     }
     

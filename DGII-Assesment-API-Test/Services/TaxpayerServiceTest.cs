@@ -20,7 +20,9 @@ public class TaxpayerServiceTest
     [TestMethod]
     public async Task Should_Get_All_Taxpayers()
     {
+        //Act
         await _service.GetAllTaxpayers();
+        //Assert
         await _repository.Received(1).GetAll();
     }
 }

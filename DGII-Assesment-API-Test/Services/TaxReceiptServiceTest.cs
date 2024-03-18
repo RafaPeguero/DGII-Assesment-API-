@@ -19,14 +19,18 @@ public class TaxReceiptServiceTest
     [TestMethod]
     public async Task Should_Get_All_TaxReceipts()
     {
+        //Act
         await _service.GetAllTaxReceipts();
+        //Assert
         await _repository.Received(1).GetAll();
     }
     
     [TestMethod]
     public async Task Should_Get_All_TaxReceiptsByTaxpayerId()
     {
+        //Act
         await _service.GetAllTaxReceiptsByTaxpayerId(11111);
+        //Assert
         await _repository.Received(1).GetTaxReceiptsByTaxPayerId(11111);
     }
 }
