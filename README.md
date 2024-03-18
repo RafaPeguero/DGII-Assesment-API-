@@ -58,6 +58,7 @@ This project is divided in 4 Projects: Web.API, Infraestructure, Domain and DGII
 │   │   └── TestConnectionFactory.cs
 ```
 - `Domain` In this layer are the models/entities of this project
+- `Dockerfile` is .NET Core Web API Multistage Dockerfile
 - `Infraestructure` In this layer are Database configuration with Sqlite, The repositories with a Base Repository with the base CRUD options and services
 -  `Web.Api` In this layer are the controllers for the API.
 -  `DGII-Assesment-API-Test` In this layer are the unit tests for all the classes from all the layers, the tests are build with MSTest and NSubstitute.
